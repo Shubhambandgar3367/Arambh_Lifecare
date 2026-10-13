@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aarambh Lifecare</title>
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="static/css/style.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
@@ -522,31 +521,13 @@
 
     <!-- NAVBAR -->
 
-    {% comment %} <nav class="navbar">
-
-        <div class="logo">
-            Aarambh Pharma
-        </div>
-
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#" data-scroll-target=".services">Services</a></li>
-            <li><a href="#" data-scroll-target=".products">Products</a></li>
-            <li><a href="#" data-scroll-target=".contact">Contact</a></li>
-        </ul>
-
-    </nav> {% endcomment %}
+    
 
     <!-- HERO SECTION -->
 
     <section class="hero">
         <div class="hero-image">
-            <img src="{% static 'images/hero.webp' %}" alt="Hero">
+            <img src="static/images/hero.webp" alt="Hero">
         </div>
         <div class="hero-content">
 
@@ -642,13 +623,7 @@
 
     <section class="about reveal-init" id="about">
 
-        {% comment %} <div class="about-image reveal-left">
-
-            <img src="{% static 'images/logo.png' %}"
-                 alt="Aarambh Lifecare Logo"
-                 class="about-logo">
-
-        </div> {% endcomment %}
+        
 
         <div class="about-content reveal-right">
 
@@ -860,13 +835,7 @@
 
     <section class="why-us reveal-init">
 
-        {% comment %}
-        <div class="why-image reveal-left">
-            <div class="image-box">
-                <img src="{% static 'images/why-us.jpg' %}" alt="Why Us">
-            </div>
-        </div>
-        {% endcomment %}
+        
 
         <div class="why-content reveal-right">
 
@@ -1086,7 +1055,7 @@
 
         <form method="POST" class="contact-form">
 
-            {% csrf_token %}
+            
 
             <input
             name="name"
@@ -1250,7 +1219,7 @@
     </div>
 
     <div class="cert-grid">
-<a href="{% static 'images/drugs-license.jpg' %}" target="_blank">
+<a href="static/images/drugs-license.jpg" target="_blank">
     <div class="cert-card glass-card stagger-child">
         <i class="fas fa-certificate"></i>
         <h3>Drugs License</h3>
@@ -1258,7 +1227,7 @@
     </div>
 </a>
 
-<a href="{% static 'images/gst-certificate.jpg' %}" target="_blank">
+<a href="static/images/gst-certificate.jpg" target="_blank">
     <div class="cert-card glass-card stagger-child">
         <i class="fas fa-file-invoice"></i>
         <h3>GST Certificate</h3>
@@ -1266,7 +1235,7 @@
     </div>
 </a>
 
-<a href="{% static 'images/fda-certificate.jpg' %}" target="_blank">
+<a href="static/images/fda-certificate.jpg" target="_blank">
     <div class="cert-card glass-card stagger-child">
         <i class="fas fa-shield-alt"></i>
         <h3>FDA Certification</h3>
@@ -1274,7 +1243,7 @@
     </div>
 </a>
 
-<a href="{% static 'images/import-export-certificate.jpg' %}" target="_blank">
+<a href="static/images/import-export-certificate.jpg" target="_blank">
     <div class="cert-card glass-card stagger-child">
         <i class="fas fa-globe"></i>
         <h3>Import Export Certificate</h3>
